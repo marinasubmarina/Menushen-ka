@@ -12,6 +12,44 @@ void pe4alno (){
 	cout << endl<< "    ** Функция временно не работает. Приносим свои извенения. **"<< endl;
 }
 
+struct spis{
+	spis *next;
+	string data;
+	spis *prev;
+	int id;
+};
+
+class link{
+	int idclass;
+spis *first;
+spis *last;
+spis *Tekushiy;
+	int Schetchik;
+public:
+	link(): first(NULL), last(NULL){}
+	int GetSchetchik(){ //функция возвращает значение счетчика
+	return Schetchik;}
+	void Dob(string n, int i){
+	spis *Tekushiy = first;
+	spis *newlink = new spis;
+	if (first==NULL){ //добавлене первого элемента
+	Schetchik = 0;
+	first=newlink;
+	last=newlink;
+	newlink->next=first;
+	newlink->prev=first;
+	newlink->data=n;
+	newlink->id=Schetchik;
+	Schetchik++;
+	}
+	}
+
+
+
+
+}
+
+	
 
 int _tmain(int argc, _TCHAR* argv[])
 { 
