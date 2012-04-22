@@ -1,0 +1,76 @@
+﻿Построение начато 23.04.2012 2:49:40.
+     1>Проект "C:\Users\Марина\Desktop\Menu spiski+rab\Menu spiski+rab\Menu spiski+rab.vcxproj" в узле 2 (целевые объекты build).
+     1>PrepareForBuild:
+         Создание каталога "C:\Users\Марина\Desktop\Menu spiski+rab\Debug\".
+       InitializeBuildStatus:
+         Создание "Debug\Menu spiski+rab.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\Menu spiski+rab.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Menu spiski+rab.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "Menu spiski+rab.cpp"
+         Menu spiski+rab.cpp
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(62): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(87): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(147): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(173): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(180): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(213): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(240): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(248): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(285): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(311): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(318): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(325): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(361): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(387): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(394): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(402): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(432): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(457): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(464): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(497): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(564): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\users\марина\desktop\menu spiski+rab\menu spiski+rab\menu spiski+rab.cpp(50): warning C4101: sure: неиспользованная локальная переменная
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Menu spiski+rab.exe.embed.manifest.res" "Debug\Menu spiski+rab_manifest.rc" 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Марина\Desktop\Menu spiski+rab\Debug\Menu spiski+rab.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Menu spiski+rab.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Марина\Desktop\Menu spiski+rab\Debug\Menu spiski+rab.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Марина\Desktop\Menu spiski+rab\Debug\Menu spiski+rab.lib" /MACHINE:X86 "Debug\Menu spiski+rab.exe.embed.manifest.res"
+         "Debug\Menu spiski+rab.obj"
+         Debug\stdafx.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Menu spiski+rab.exe.embed.manifest" /manifest "Debug\Menu spiski+rab.exe.intermediate.manifest"
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Menu spiski+rab.exe.embed.manifest.res" "Debug\Menu spiski+rab_manifest.rc" 
+       LinkEmbedManifest:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Марина\Desktop\Menu spiski+rab\Debug\Menu spiski+rab.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Menu spiski+rab.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Марина\Desktop\Menu spiski+rab\Debug\Menu spiski+rab.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Марина\Desktop\Menu spiski+rab\Debug\Menu spiski+rab.lib" /MACHINE:X86 "Debug\Menu spiski+rab.exe.embed.manifest.res"
+         "Debug\Menu spiski+rab.obj"
+         Debug\stdafx.obj
+         Menu spiski+rab.vcxproj -> C:\Users\Марина\Desktop\Menu spiski+rab\Debug\Menu spiski+rab.exe
+       FinalizeBuildStatus:
+         Файл "Debug\Menu spiski+rab.unsuccessfulbuild" удаляется.
+         Обращение к "Debug\Menu spiski+rab.lastbuildstate".
+     1>Построение проекта "C:\Users\Марина\Desktop\Menu spiski+rab\Menu spiski+rab\Menu spiski+rab.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:08.70
