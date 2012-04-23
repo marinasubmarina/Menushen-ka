@@ -44,10 +44,71 @@ public:
 	}
 	}
 
+	void Dobvcentr (string n){
+	spis*Tekushiy = first;
+	spis *newlink = new spis;
+	spis *temporary= new spis; //?
+		if(first == NULL)
+		{
+			Schetchik=0;
+			newlink->data=n;
+			newlink->id=Schetchik;
+			newlink->prev=first;
+			first=newlink;
+			last=newlink;
+			Schetchik++;
+		}
+		else { int kolvo_elem=0;
+			while (Tekushiy)
+			{kolvo_elem++;
+			Tekushiy=Tekushiy->next;}
+		Tekushiy=first;
+		Tekushiy=last;
+		int nujniy_elem;
+		if (kolvo_elem%2==1)
+			{nujniy_elem=nujniy_elem/2;}
+		else 
+			{nujniy_elem= (nujniy_elem-1)/2;}
 
-
-
+		int list=0;
+		while (list<nujniy_elem+1){
+			if (list==nujniy_elem){
+			newlink->data=n;
+			newlink->id=Schetchik;
+			Schetchik++;
+			newlink->next=Tekushiy->next;
+			newlink->prev=Tekushiy;
+			Tekushiy->next=newlink;	}
+		list++;
+		Tekushiy=Tekushiy->next;		
+		}
+	}
 }
+
+	void Prosmotrs1(){
+	spis *Tekushiy=first;
+	do {
+	cout<<Tekushiy->data << " " << Tekushiy->id<<endl;
+	Tekushiy=Tekushiy->next;	}
+	while (Tekushiy!=NULL);
+	}
+int Kol(){	
+	return idclass;}
+
+void Udal(){
+	if (Tekushiy>0) Tekushiy--;
+		if (first!=NULL)
+		{spis *Tekushiy=first;
+		first=first->next;
+		delete Tekishiy;
+		}
+}
+
+void UdalVse(){
+	while(first!=0){Udal();}}
+
+
+;}
 
 	
 
