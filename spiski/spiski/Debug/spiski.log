@@ -1,0 +1,73 @@
+﻿Построение начато 04.05.2012 1:19:38.
+     1>Проект "C:\ДИСК\Новая папка\Menushen-ka\spiski\spiski\spiski.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Обращение к "Debug\spiski.unsuccessfulbuild".
+       ClCompile:
+         Для всех выходных данных обновления не требуется.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\spiski.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt spiski.cpp
+         spiski.cpp
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(160): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(185): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(245): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(271): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(278): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(311): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(338): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(346): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(383): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(409): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(416): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(430): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(466): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(492): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(499): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(507): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(537): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(562): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(569): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(602): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(669): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128): см. объявление "getch"
+     1>c:\диск\новая папка\menushen-ka\spiski\spiski\spiski.cpp(148): warning C4101: sure: неиспользованная локальная переменная
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\spiski.exe.embed.manifest.res" Debug\spiski_manifest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\ДИСК\Новая папка\Menushen-ka\spiski\Debug\spiski.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\spiski.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\ДИСК\Новая папка\Menushen-ka\spiski\Debug\spiski.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\ДИСК\Новая папка\Menushen-ka\spiski\Debug\spiski.lib" /MACHINE:X86 Debug\spiski.exe.embed.manifest.res
+         Debug\spiski.obj
+         Debug\stdafx.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\spiski.exe.embed.manifest" /manifest Debug\spiski.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\spiski.exe.embed.manifest.res" Debug\spiski_manifest.rc 
+       LinkEmbedManifest:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\ДИСК\Новая папка\Menushen-ka\spiski\Debug\spiski.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\spiski.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\ДИСК\Новая папка\Menushen-ka\spiski\Debug\spiski.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\ДИСК\Новая папка\Menushen-ka\spiski\Debug\spiski.lib" /MACHINE:X86 Debug\spiski.exe.embed.manifest.res
+         Debug\spiski.obj
+         Debug\stdafx.obj
+         spiski.vcxproj -> C:\ДИСК\Новая папка\Menushen-ka\spiski\Debug\spiski.exe
+       FinalizeBuildStatus:
+         Файл "Debug\spiski.unsuccessfulbuild" удаляется.
+         Обращение к "Debug\spiski.lastbuildstate".
+     1>Построение проекта "C:\ДИСК\Новая папка\Menushen-ka\spiski\spiski\spiski.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:04.45
