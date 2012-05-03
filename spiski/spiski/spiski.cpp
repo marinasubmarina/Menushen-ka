@@ -123,18 +123,17 @@ int const podmenu1=3;
 int selected_item1=0;
 string  menu1 []={ " Загрузить из файла ", " Сохранить в файл ", " Возврат в главное меню"};
 
-
-int const podmenu2=3;
+int const podmenu2=2;
 int selected_item2=0;
-string  menu2 []={ " Просмотр всего списка ", " Просмотр по ключу ", " Возврат в главное меню"};
+string  menu2 []={ " Просмотр списка ", " Возврат в главное меню"};
 
-int const podmenu3=4;
+int const podmenu3=2;
 int selected_item3=0;
-string  menu3 []={" Добавление элемента в начало списка"," Добавление элемента в конец списка"," Добавление элемента по ключу"," Возврат в главное меню"};
+string  menu3 []={" Добавление элемента в середину списка"," Возврат в главное меню"};
 
-int const podmenu4=4;
+int const podmenu4=2;
 int selected_item4=0;
-string  menu4 []={" Удаление элемента в начале списка"," Удаление элемента в конце списка"," Удаление элемента по ключу", " Возврат в главное меню"};
+string  menu4 []={" Удаление элемента  из середины списка", " Возврат в главное меню"};
 
 
 int const podmenu5=3;
@@ -196,8 +195,7 @@ case 72://вверх
 		selected_item6++;
 	break;
 	
-	case 27:
-		
+	case 27: //эскейп
 		goto m;
 break;
 
@@ -226,17 +224,13 @@ break;
 	case 13://Enter 
 	switch(selected_item) {
 	case 0: //первое подменю
-				
+		m1:		
 		while(true) {
 			system("cls");
 			cout<< endl<<"   Меню. Работа с файлами"<<endl<<endl;
 for(int i=0;i<podmenu1;i++){
-		if (i==selected_item1){
-		cout<<" > ";
-		}
-		else {
-		cout<<"   ";
-		}
+		if (i==selected_item1){		cout<<" > ";		}
+		else {		cout<<"   ";		}
 		
 		if(i==podmenu1-1){
 			cout<<" 0. "<<menu1[i];}
@@ -258,8 +252,7 @@ for(int i=0;i<podmenu1;i++){
 		
 	break;
 	case 27:
-		
-		goto m;
+				goto m;
 		break;
 	case 13:
 		switch(selected_item1) { //по стрелкам
@@ -269,21 +262,21 @@ for(int i=0;i<podmenu1;i++){
 						pe4alno(); 
 						cout << endl<<" >   1. Вернуться в меню."<<endl;
 						switch (getch()){
-						case 13: goto m;}
+						case 13: goto m1;}
 		case 1:
 			system("cls");
 						cout << "  Подменю. Сохранение "<< endl<< endl; 
 						pe4alno(); 
 						cout << endl<<" >   1. Вернуться в меню."<<endl;
 						switch (getch()){
-						case 13: goto m;}
+						case 13: goto m1;}
 		case 2:
 			goto m;
 		
 	}
 	break;
 	//по номерам
-			case 49://1 
+		case 49://1 
 		selected_item1=0;
 		break;
 	case 50://2
@@ -292,12 +285,11 @@ for(int i=0;i<podmenu1;i++){
 		
 	case 48:
 		selected_item1=2;
-		
-			goto m;	
 		} }
 
 
 	case 1://подменю номер 2
+		m2:
 		while(true) {
 			system("cls");
 			cout<< endl<< "  Меню. Просмотр"<<endl<<endl;
@@ -323,58 +315,39 @@ for(int i=0;i<podmenu2;i++){
 		selected_item2++;
 		
 	break;
-	case 27:
-		
-		goto m;
-		break;
+	case 27:		goto m;		break;
 		
 	case 13:
 		switch(selected_item2) {
 		case 0:
 			system("cls");
-			cout << "  Подменю. Просмотр всего списка. "<< endl<< endl; 
+			cout << "  Подменю. Просмотр списка. "<< endl<< endl; 
 			tes->Showfromfirst();
 			cout << endl<<" >   1. Вернуться в меню."<<endl;
 			switch (getch()){
-			case 13: goto m;}
+			case 13: goto m2;}
 
-		case 1:
-			system("cls");
-			cout << "  Подменю. Просмотр всего списка. "<< endl<< endl; 
-			pe4alno(); 
-			cout << endl<<" >   1. Вернуться в меню."<<endl;
-			switch (getch()){
-			case 13: goto m;}
-
-
-		case 2:		goto m;	break;
+		case 1:		goto m;	break;
 	}
 	break;
 			case 49://1
 		selected_item2=0;
 		break;
-	case 50://2
-		selected_item2=1;
-		break; 
-		
+			
 	case 48:
-		selected_item2=2;
-		
-		goto m;
+		selected_item2=1;
+		break;
 				
 		} }
 		break; 
 	case 2://подменю номер 3
+		m3:
 			while(true) {
 			system("cls");
 			cout<< endl<<"   Меню. Добавление элементов"<<endl<<endl;
 for(int i=0;i<podmenu3;i++){
-		if (i==selected_item3){
-		cout<<" > ";
-		}
-		else {
-		cout<<"   ";
-		}
+		if (i==selected_item3){		cout<<" > ";		}
+		else {		cout<<"   ";		}
 		
 		if(i==podmenu3-1){
 			cout<<" 0. "<<menu3[i];}
@@ -395,64 +368,35 @@ for(int i=0;i<podmenu3;i++){
 		selected_item3++;
 		
 	break;
-	case 27:
-		
-		goto m;
-		break;
+	case 27:		goto m;		break;
 	case 13:
 		switch(selected_item3) {
 		case 0:
 			system("cls");
 						cout << "  Подменю. Добавление элемента в начало списка. "<< endl<< endl; 
-						pe4alno(); 
-						cout << endl<<" >   1. Вернуться в меню."<<endl;
-						switch (getch()){
-						case 13: goto m;}
-		case 1:
-			system("cls");
-						cout << "  Подменю. Добавление элемента в конец списка. "<< endl<< endl; 
-						pe4alno(); 
-						cout << endl<<" >   1. Вернуться в меню."<<endl;
-						switch (getch()){
-						case 13: goto m;}
-		case 2:
-			system("cls");
-						cout << "  Подменю. Добавление элемента в середину списка. "<< endl<< endl; 
-						system("clear");
+						
 						cin>>stroka;
 						cout<<endl;
 						tes->addcenter(stroka); //вызов добавления в середину
 						cout<<endl<<endl;
-						
-						system("clear");
-
 						cout << endl<<" >   1. Вернуться в меню."<<endl;
 						switch (getch()){
-						case 13: goto m;}
-		case 3:
-			
-			goto m;
-	break;
+						case 13: goto m3;
+						}
+		case 1:			goto m;	break;
 	}
 	break;
 	case 49://1
-		selected_item3=0;
-		break;
-	case 50://2
-		selected_item3=1;
-		break; 
-	case 51:
-		selected_item3=2;
-		break;
+		selected_item3=0;		break;
 		
 	case 48:
-		selected_item3=3;
-		
-		goto m;
-				
-		} }
+		selected_item3=1; break;
+						} }
 		break; 
+
+
 	case 3://подменю номер 4
+		m4:
 			while(true) {
 			system("cls");
 			cout<< endl<<"   Меню. Удаление"<<endl<<endl;
@@ -486,44 +430,26 @@ for(int i=0;i<podmenu4;i++){
 		switch(selected_item4) {
 		case 0:
 			system("cls");
-						cout << "  Подменю. Удаление элемента в начале списка. "<< endl<< endl; 
+						cout << "  Подменю. Удаление элемента из серелины списка. "<< endl<< endl; 
 						pe4alno(); 
 						cout << endl<<" >   1. Вернуться в меню."<<endl;
 						switch (getch()){
-						case 13: goto m;}
-		case 1:
-			system("cls");
-						cout << "  Подменю. Удаление элемента в конце списка. "<< endl<< endl; 
-						pe4alno(); 
-						cout << endl<<" >   1. Вернуться в меню."<<endl;
-						switch (getch()){
-						case 13: goto m;}
-
-		case 2:
-			system("cls");
-						cout << "  Подменю. Удаление элемента по ключу. "<< endl<< endl; 
-						pe4alno(); 
-						cout << endl<<" >   1. Вернуться в меню."<<endl;
-						switch (getch()){
-						case 13: goto m;}
-						case 3: goto m; break;
+						case 13: goto m4;}
+		case 1: goto m; break;
 	break;
 	}
 	break;
 	case 49://1
 		selected_item4=0;
 		break;
-	case 50://2
-		selected_item4=1;
-		break; 
-		
+			
 	case 48:
-		selected_item4=2;
-			goto m;
-		} }
+		selected_item4=1;
+				} }
 		break; 
 
 	case 4://подменю номер 5
+		m5:
 			while(true) {
 			system("cls");
 			cout<< endl<< "   Меню. Редактирование"<<endl<<endl;
@@ -560,14 +486,14 @@ for(int i=0;i<podmenu5;i++){
 						pe4alno(); 
 						cout << endl<<" >   1. Вернуться в меню."<<endl;
 						switch (getch()){
-						case 13: goto m;}
+						case 13: goto m5;}
 		case 1:
 			system("cls");
 						cout << "  Подменю. Перемещене элементов. "<< endl<< endl; 
 						pe4alno(); 
 						cout << endl<<" >   1. Вернуться в меню."<<endl;
 						switch (getch()){
-						case 13: goto m;}
+						case 13: goto m5;}
 		case 2:		goto m;
 	break;
 	}
@@ -581,8 +507,6 @@ for(int i=0;i<podmenu5;i++){
 		
 	case 48:
 		selected_item5=2;
-		
-		goto m;
 				
 		} }
 		break; 
@@ -619,21 +543,22 @@ break;
 	case 13://Enter
 		switch(selected_item6) {
 		case 0:
-			exit(0);
+			goto m;
 			break;
 		case 1:
-			goto m;
+			exit(0);
 			break;
 	break;
 	}
 	break;
 	
 	case 49:
-		exit(0);
-		break;
-	case 50:
 		goto m;
 		break;
+	case 50:
+		exit(0);
+		break;
+	
 	
 } } }
 	case 49://1
@@ -680,27 +605,27 @@ case 72://вверх
 		selected_item6++;
 	break;
 	case 27:
-		
 		goto m;
 break;
 	case 13://Enter
 		switch(selected_item6) {
 		case 0:
-			exit(0);
+			goto m;
 			break;
 		case 1:
-			goto m;
+			exit(0);
 			break;
 	break;
 	}
 	break;
 	
 	case 49:
-		exit(0);
-		break;
-	case 50:
 		goto m;
 		break;
+	case 50:
+		exit(0);
+		break;
+	
 	
 } } }
 

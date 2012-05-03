@@ -6,6 +6,7 @@
 #include <iostream>
 #include <string>
 #include <conio.h>
+#include <fstream>
 using namespace std;
 
 void pe4alno (){
@@ -100,21 +101,67 @@ void Udal(){
 		if (first!=NULL)
 		{spis *Tekushiy=first;
 		first=first->next;
-		delete Tekishiy;
+		delete Tekushiy;
 		}
 }
 
 void UdalVse(){
 	while(first!=0){Udal();}}
 
+void addnum(string Str, int Num){
+	spis *Tekushiy = first;
+	spis *added = new spis;
+	if (Tekushiy=NULL)
+	{	first=added;}
+	else {
+		while (Tekushiy->next != NULL)
+		{Tekushiy=Tekushiy->next;}
+		Tekushiy->next=added;}
+	added->next=NULL;
+	added->data=Str;
+	added->id=Num;
+}
 
-;}
+void Mkol(int a)
+{idclass=a;}
+
+void loadfile(){ // открыть (загрузить) файл
+this->UdalVse();
+ifstream out ("binaryfile.bin", ios::binary);
+int kol;
+out>>kol;
+this->Mkol(kol);
+while (!out.eof()){
+string Str;
+int cur;
+out>>Str;
+out>>cur;
+this->addnum(Str,cur);
+}
+out.close();
+}
+
+void savefile(){ //сохранить файл
+ofstream to ("binaryfile.bin", ios::binary);
+to<<this->Kol();
+spis *Tekushiy=first;
+while (Tekushiy){
+to<<Tekushiy->data<<' ';
+to<<Tekushiy->id;
+Tekushiy=Tekushiy->next;
+}
+to.close();
+}
+};
 
 	
 
 int _tmain(int argc, _TCHAR* argv[])
 { 
 	setlocale(LC_ALL,"russian");
+
+	string s; link *tes=new link;
+
 int const k=6;
 int selected_item=0;
 m:
@@ -125,13 +172,13 @@ int selected_item1=0;
 string  menu1 []={ " Загрузить из файла ", " Сохранить в файл ", " Возврат в главное меню"};
 
 
-int const podmenu2=3;
+int const podmenu2=2;
 int selected_item2=0;
-string  menu2 []={ " Просмотр всего списка ", " Просмотр по ключу ", " Возврат в главное меню"};
+string  menu2 []={ " Просмотр всего списка ", " Возврат в главное меню"};
 
 int const podmenu3=4;
 int selected_item3=0;
-string  menu3 []={" Добавление элемента в начало списка"," Добавление элемента в конец списка"," Добавление элемента по ключу"," Возврат в главное меню"};
+string  menu3 []={" Добавление элемента в середину списка"," Добавление элемента в конец списка"," Добавление элемента по ключу"," Возврат в главное меню"};
 
 int const podmenu4=4;
 int selected_item4=0;
@@ -265,19 +312,23 @@ for(int i=0;i<podmenu1;i++){
 	case 13:
 		switch(selected_item1) { //по стрелкам
 		case 0:
-			system("cls");
+			tes->loadfile();
+			break;
+			/*system("cls");
 						cout << "  Подменю. Загрузка "<< endl<< endl; 
 						pe4alno(); 
 						cout << endl<<" >   1. Вернуться в меню."<<endl;
 						switch (getch()){
-						case 13: goto m;}
+						case 13: goto m;} */
 		case 1:
-			system("cls");
+			tes->savefile();
+			break;
+			/*system("cls");
 						cout << "  Подменю. Сохранение "<< endl<< endl; 
 						pe4alno(); 
 						cout << endl<<" >   1. Вернуться в меню."<<endl;
 						switch (getch()){
-						case 13: goto m;}
+						case 13: goto m;}*/
 		case 2:
 			goto m;
 		
@@ -297,12 +348,13 @@ for(int i=0;i<podmenu1;i++){
 			goto m;	
 		} }
 
-
+m2:
 	case 1://подменю номер 2
 		while(true) {
 			system("cls");
 			cout<< endl<< "  Меню. Просмотр"<<endl<<endl;
-for(int i=0;i<podmenu2;i++){
+			
+			for(int i=0;i<podmenu2;i++){
 		if (i==selected_item2){
 		cout<<" > ";}		else {cout<<"   ";}
 		
@@ -325,7 +377,6 @@ for(int i=0;i<podmenu2;i++){
 		
 	break;
 	case 27:
-		
 		goto m;
 		break;
 		
@@ -334,37 +385,31 @@ for(int i=0;i<podmenu2;i++){
 		case 0:
 			system("cls");
 			cout << "  Подменю. Просмотр всего списка. "<< endl<< endl; 
-			pe4alno(); 
+			
+			cout<< endl<<endl;
+			tes->Prosmotrs1();
+			break;
+
 			cout << endl<<" >   1. Вернуться в меню."<<endl;
 			switch (getch()){
 			case 13: goto m;}
 
 		case 1:
-			system("cls");
-			cout << "  Подменю. Просмотр всего списка. "<< endl<< endl; 
-			pe4alno(); 
-			cout << endl<<" >   1. Вернуться в меню."<<endl;
-			switch (getch()){
-			case 13: goto m;}
-
-
-		case 2:		goto m;	break;
+				goto m;	break;
 	}
 	break;
 			case 49://1
 		selected_item2=0;
 		break;
-	case 50://2
-		selected_item2=1;
-		break; 
 		
 	case 48:
-		selected_item2=2;
+		selected_item2=1;
 		
-		goto m;
-				
+					
 		} }
 		break; 
+
+m3:
 	case 2://подменю номер 3
 			while(true) {
 			system("cls");
@@ -400,15 +445,17 @@ for(int i=0;i<podmenu3;i++){
 		
 		goto m;
 		break;
-	case 13:
+	case 13: // entr
 		switch(selected_item3) {
 		case 0:
 			system("cls");
-						cout << "  Подменю. Добавление элемента в начало списка. "<< endl<< endl; 
-						pe4alno(); 
-						cout << endl<<" >   1. Вернуться в меню."<<endl;
-						switch (getch()){
-						case 13: goto m;}
+						cout << "  Подменю. Добавление элемента в середину списка. "<< endl<< endl; 
+						cin>>s;
+						cout<<endl;
+						tes->Dobvcentr(s);
+						cout<<endl<<endl;
+						goto m3;
+						
 		case 1:
 			system("cls");
 						cout << "  Подменю. Добавление элемента в конец списка. "<< endl<< endl; 
@@ -418,7 +465,7 @@ for(int i=0;i<podmenu3;i++){
 						case 13: goto m;}
 		case 2:
 			system("cls");
-						cout << "  Подменю. Добавление элемента в середину списка. "<< endl<< endl; 
+						cout << "  Подменю. Добавление элемента в начало списка. "<< endl<< endl; 
 						pe4alno(); 
 						cout << endl<<" >   1. Вернуться в меню."<<endl;
 						switch (getch()){
@@ -446,6 +493,10 @@ for(int i=0;i<podmenu3;i++){
 				
 		} }
 		break; 
+
+
+
+
 	case 3://подменю номер 4
 			while(true) {
 			system("cls");
