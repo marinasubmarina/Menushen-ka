@@ -5,6 +5,10 @@
 #include <iostream>
 #include <string>
 #include <conio.h>
+#include <cstdlib>
+#include <stdio.h>
+#include <fstream>
+#include <assert.h>
 using namespace std;
 
 struct Node{
@@ -99,7 +103,37 @@ public:
 			current=current->next;
 		} while (current!=NULL);
 	}
+	void PrintToFile(){
+		ofstream out;
 
+		out.open("New List.bin");
+		Node *current = first;
+	do{
+		//out<<current->id<<" "«current->data<<"\n";
+		out<<current->data<<"\n";
+		current=current->next;
+	} while (current!=NULL);
+	out.close();
+	}
+
+        void ExtractFromFile(Gloss *name){
+			ifstream fin;
+			string str;
+			string paststring="ololo";
+
+			fin.open("New List.bin",ios::in);
+			assert (!fin.fail( ));
+
+		while (!fin.eof( )){
+				fin >> str;
+				if(str != paststring){
+			name->Add(str);
+			paststring=str;
+			}
+		}
+		fin.close( );
+		//assert(!fin.fail( ));
+	}
 
 	void Del(){
 	 //if (num>0) num--;
@@ -268,14 +302,15 @@ for(int i=0;i<podmenu1;i++){
 		case 0:
 			system("cls");
 						cout << "  Подменю. Загрузка "<< endl<< endl; 
-						pe4alno();
+						tes->Del();
+							tes->ExtractFromFile(tes);
 						cout << endl<<" >   1. Вернуться в меню."<<endl;
 						switch (getch()){
 						case 13: goto m1;}
 		case 1:
 			system("cls");
 						cout << "  Подменю. Сохранение "<< endl<< endl; 
-						pe4alno();
+						tes->PrintToFile();
 						cout << endl<<" >   1. Вернуться в меню."<<endl;
 						switch (getch()){
 						case 13: goto m1;}
@@ -640,3 +675,7 @@ break;
 } } }
 
 }}  
+
+
+
+
