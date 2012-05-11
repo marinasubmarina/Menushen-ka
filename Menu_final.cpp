@@ -156,6 +156,7 @@ int _tmain(int argc, _TCHAR* argv[])
 { 
 	setlocale(LC_ALL,"russian");
 	Gloss *tes=new Gloss;
+	int z=0;
 int const k=6;
 int selected_item=0;
 string stroka;
@@ -176,7 +177,7 @@ string  menu3 []={" Добавление элемента в середину списка"," Возврат в главное м
 
 int const podmenu4=2;
 int selected_item4=0;
-string  menu4 []={" Удаление элемента  из середины списка", " Возврат в главное меню"};
+string  menu4 []={" Удаление элементов", " Возврат в главное меню"};
 
 
 int const podmenu5=3;
@@ -304,10 +305,11 @@ for(int i=0;i<podmenu1;i++){
 						cout << "  Подменю. Загрузка "<< endl<< endl<< endl ; 
 						cout << "  Файл успешно загружен." << endl<< endl;
 						tes->Del();
-						tes->ExtractFromFile(tes);
+						tes->ExtractFromFile(tes); z++;
 						cout << endl<<" >   1. Вернуться в меню."<<endl;
 						switch (getch()){
-						case 13: goto m1;}
+						case 13: goto m1;
+						case 27: goto m1;}
 		case 1:
 			system("cls");
 						cout << "  Подменю. Сохранение "<< endl<< endl<<endl; 
@@ -315,7 +317,8 @@ for(int i=0;i<podmenu1;i++){
 						tes->PrintToFile();
 						cout << endl<<" >   1. Вернуться в меню."<<endl;
 						switch (getch()){
-						case 13: goto m1;}
+						case 13: goto m1;
+						case 27: goto m1;}
 		case 2:
 			goto m;
 		
@@ -368,7 +371,9 @@ for(int i=0;i<podmenu2;i++){
 		case 0:
 			system("cls");
 			cout << "  Подменю. Просмотр списка. "<< endl<< endl; 
-			tes->Showfromfirst();
+			if (z==0)  {cout << " Список пуст :(" << endl;} 
+			else {
+				tes->Showfromfirst();}
 			cout << endl<<" >   1. Вернуться в меню."<<endl;
 			switch (getch()){
 			case 13: goto m2;}
@@ -423,7 +428,7 @@ for(int i=0;i<podmenu3;i++){
 						
 						cin>>stroka;
 						cout<<endl;
-						tes->addcenter(stroka); //вызов добавления в середину
+						tes->addcenter(stroka); z++; //вызов добавления в середину
 						cout<<endl<<endl;
 						cout << endl<<" >   1. Вернуться в меню."<<endl;
 						switch (getch()){
@@ -478,7 +483,7 @@ for(int i=0;i<podmenu4;i++){
 			system("cls");
 						cout << "  Подменю. Удаление элемента. "<< endl<< endl; 
 						tes -> Del(); 
-						cout << "  Элемент удален  " << endl;
+						cout << "  Элементы удалены  " << endl;
 						cout << endl<<" >   1. Вернуться в меню."<<endl;
 						switch (getch()){
 						case 13: goto m4;}
