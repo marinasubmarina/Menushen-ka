@@ -301,15 +301,17 @@ for(int i=0;i<podmenu1;i++){
 		switch(selected_item1) { //по стрелкам
 		case 0:
 			system("cls");
-						cout << "  Подменю. Загрузка "<< endl<< endl; 
+						cout << "  Подменю. Загрузка "<< endl<< endl<< endl ; 
+						cout << "  Файл успешно загружен." << endl<< endl;
 						tes->Del();
-							tes->ExtractFromFile(tes);
+						tes->ExtractFromFile(tes);
 						cout << endl<<" >   1. Вернуться в меню."<<endl;
 						switch (getch()){
 						case 13: goto m1;}
 		case 1:
 			system("cls");
-						cout << "  Подменю. Сохранение "<< endl<< endl; 
+						cout << "  Подменю. Сохранение "<< endl<< endl<<endl; 
+						cout << "  Файл успешно сохранен." << endl<< endl;
 						tes->PrintToFile();
 						cout << endl<<" >   1. Вернуться в меню."<<endl;
 						switch (getch()){
@@ -417,7 +419,7 @@ for(int i=0;i<podmenu3;i++){
 		switch(selected_item3) {
 		case 0:
 			system("cls");
-						cout << "  Подменю. Добавление элемента в начало списка. "<< endl<< endl; 
+						cout << "  Подменю. Добавление элемента в середину списка. "<< endl<< endl; 
 						
 						cin>>stroka;
 						cout<<endl;
@@ -587,10 +589,10 @@ case 72://вверх
 break;
 	case 13://Enter
 		switch(selected_item6) {
-		case 0:
+		case 1:
 			goto m;
 			break;
-		case 1:
+		case 0:
 			exit(0);
 			break;
 	break;
@@ -622,20 +624,9 @@ break;
 		selected_item=4;
 		break;
 	case 48://
-		//system("cls");
 		selected_item=5;
+		break;
 		
-				while(true) {
-			system("cls");
-			cout<<endl<<"   Вы уверены, что хотите выйти?"<<endl<<endl;
-for(int i=0;i<ex;i++){
-		if (i==selected_item6){		cout<<" > ";}	else {	cout<<"   ";	}
-		if(i==ex-1)
-			cout<<" 2. "<<Exit[i];
-		else cout<<" "<<i+1<<". "<<Exit[i]<<endl;
-		} 
-		
-
 switch(getch()) {
 case 72://вверх
 	selected_item6 --;
@@ -674,7 +665,7 @@ break;
 	
 } } }
 
-}}  
+}
 
 
 
